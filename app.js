@@ -1,8 +1,8 @@
-const https = require("https");
+const http = require('http');
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000
 
-https.createServer(function (req, res) {
+http.createServer(function (req, res) {
   let url = req.url;
 
   res.writeHead(200, {
