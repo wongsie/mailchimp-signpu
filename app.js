@@ -1,6 +1,6 @@
 const https = require(https);
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 
 https.createServer(function (req, res) {
   let url = req.url;
